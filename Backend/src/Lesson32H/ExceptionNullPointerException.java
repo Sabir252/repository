@@ -6,7 +6,7 @@ public class ExceptionNullPointerException {
 			String text = null;
 			System.out.println(text.length());
 		} catch (NullPointerException n) {
-			System.out.println("Ошибка, обращение на null Обьекту.");
+			System.err.println("Ошибка, обращение на null Обьекту.");
 		}
 	}
 }

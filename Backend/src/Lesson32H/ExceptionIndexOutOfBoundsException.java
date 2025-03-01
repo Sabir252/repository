@@ -6,7 +6,19 @@ public class ExceptionIndexOutOfBoundsException {
 			int[] numbers = {1,2,3,4};
 			System.out.println(numbers[10]);
 		} catch (IndexOutOfBoundsException i) {
-			System.out.println("Ошибка, выход за пределы массива.");
+			System.err.println("Ошибка, выход за пределы массива.");
+		}
+		
+		try {
+			try {
+				int n = 10/0;
+			} catch (Exception e) {
+				System.out.println("jbhhb");
+			}
+			int[] numbers = new int [10];
+			numbers[20] = 5;
+		} catch (Exception e) {
+			
 		}
 	}
 }

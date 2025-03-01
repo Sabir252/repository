@@ -6,8 +6,14 @@ public class ExceptionNumberFormatException {
 			String text = "Sabir";
 			int number = Integer.parseInt(text);
 			System.out.println(number);
+		} catch (NumberFormatException n) {
+			System.out.println("Ошибка, преоброзование строки в число.");
+		}
+		
+		try {
+			int number = 10 / 0;
 		} catch (Exception e) {
-			System.out.println("Ошибка, преоброзование строки в число.		");
+			System.out.println("jnjn");
 		}
 	}
 }
